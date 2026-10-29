@@ -1,0 +1,473 @@
+/* Vault 元系统管理 —— 全部使用 Obsidian 主题变量，自动适配明暗主题。 */
+.vault-meta-view {
+  padding: 16px 20px 32px;
+  color: var(--text-normal);
+  background: var(--background-primary);
+  font-size: var(--font-ui-medium);
+}
+
+.vault-meta-view .vm-header {
+  margin-bottom: 12px;
+}
+
+.vault-meta-view .vm-title {
+  margin: 0 0 4px;
+  font-size: 1.4em;
+  color: var(--text-normal);
+}
+
+.vault-meta-view .vm-subtitle {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.vm-tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.vm-tab {
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: var(--font-ui-medium);
+  border-radius: var(--radius-s) var(--radius-s) 0 0;
+}
+
+.vm-tab:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.vm-tab.is-active {
+  color: var(--text-normal);
+  border-bottom-color: var(--interactive-accent);
+  font-weight: var(--font-semibold);
+}
+
+.vm-tab:focus-visible,
+.vm-btn:focus-visible,
+.vm-input:focus-visible,
+.vm-tab:focus {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+}
+
+.vm-body {
+  display: block;
+  min-width: 0;
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.vm-card {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 10px 12px;
+  min-width: 0;
+}
+
+.vm-card-label {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  margin-bottom: 4px;
+}
+
+.vm-card-value {
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-small);
+  overflow-wrap: anywhere;
+}
+
+.vm-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.vm-btn {
+  cursor: pointer;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  color: var(--text-normal);
+  border-radius: var(--radius-s);
+  padding: 6px 12px;
+  font-size: var(--font-ui-small);
+}
+
+.vm-btn:hover {
+  background: var(--background-modifier-hover);
+}
+
+.vm-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.vm-btn.mod-cta {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+.vm-btn.mod-warning {
+  color: var(--text-error);
+  border-color: var(--text-error);
+}
+
+.vm-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+}
+
+.vm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-ui-small);
+  min-width: 640px;
+}
+
+.vm-table th,
+.vm-table td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  vertical-align: top;
+}
+
+.vm-table th {
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  font-weight: var(--font-semibold);
+  white-space: nowrap;
+}
+
+.vm-table tr:last-child td {
+  border-bottom: none;
+}
+
+.vm-cell-strong {
+  font-weight: var(--font-semibold);
+}
+
+.vm-cell-sub {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  font-family: var(--font-monospace);
+}
+
+.vm-cell-purpose {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  margin-top: 2px;
+}
+
+.vm-cell-warn {
+  color: var(--text-error);
+  font-size: var(--font-ui-smaller);
+}
+
+.vm-row-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.vm-empty {
+  border: 1px dashed var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--text-muted);
+  margin: 12px 0;
+}
+
+.vm-empty-title {
+  color: var(--text-normal);
+  font-weight: var(--font-semibold);
+  margin-bottom: 6px;
+}
+
+.vm-hint {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+
+.vm-note {
+  background: var(--background-secondary);
+  border-left: 3px solid var(--interactive-accent);
+  border-radius: var(--radius-s);
+  padding: 10px 14px;
+  margin: 16px 0;
+}
+
+.vm-note p {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.vm-message {
+  border-radius: var(--radius-s);
+  padding: 10px 12px;
+  margin: 10px 0;
+  font-size: var(--font-ui-small);
+}
+
+.vm-message-loading {
+  background: var(--background-secondary);
+  color: var(--text-muted);
+}
+
+.vm-message-error {
+  background: rgba(var(--color-red-rgb, 220, 53, 69), 0.12);
+  color: var(--text-error);
+  border: 1px solid var(--text-error);
+}
+
+.vm-status {
+  margin-top: 20px;
+  padding: 10px 12px;
+  border-radius: var(--radius-s);
+  font-size: var(--font-ui-small);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  overflow-wrap: anywhere;
+}
+
+.vm-status-ok {
+  border-color: var(--color-green, var(--interactive-accent));
+}
+
+.vm-status-error {
+  border-color: var(--text-error);
+  color: var(--text-error);
+}
+
+.vm-status-pending {
+  color: var(--text-muted);
+}
+
+.vm-status code,
+.vm-status pre {
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.vm-status-code {
+  color: var(--text-muted);
+  font-family: var(--font-monospace);
+}
+
+.vm-section-title {
+  margin: 20px 0 8px;
+  font-size: var(--font-ui-medium);
+  color: var(--text-normal);
+}
+
+.vm-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.vm-chip {
+  display: inline-flex;
+  gap: 6px;
+  align-items: baseline;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: var(--font-ui-smaller);
+}
+
+.vm-chip-version {
+  color: var(--text-muted);
+  font-family: var(--font-monospace);
+}
+
+.vm-field {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.vm-field-label {
+  font-weight: var(--font-semibold);
+  font-size: var(--font-ui-small);
+  color: var(--text-normal);
+}
+
+.vm-field-desc,
+.vm-field-hint {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.vm-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  padding: 6px 8px;
+  font-size: var(--font-ui-small);
+  font-family: var(--font-monospace);
+}
+
+.vm-textarea {
+  min-height: 160px;
+  resize: vertical;
+  white-space: pre;
+}
+
+.vm-scope {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  margin: 8px 0;
+  font-size: var(--font-ui-small);
+}
+
+.vm-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-normal);
+}
+
+.vm-modal-desc {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.vm-modal-body {
+  margin: 10px 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vm-modal-line {
+  display: grid;
+  grid-template-columns: minmax(80px, 120px) 1fr;
+  gap: 8px;
+  font-size: var(--font-ui-small);
+}
+
+.vm-modal-line-label {
+  color: var(--text-muted);
+}
+
+.vm-modal-line-value {
+  overflow-wrap: anywhere;
+}
+
+.vm-modal-line.is-warn .vm-modal-line-value {
+  color: var(--text-error);
+}
+
+.vm-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .vault-meta-view {
+    padding: 12px;
+  }
+
+  .vm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vm-modal-line {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .vm-toolbar .vm-btn {
+    flex: 1 1 auto;
+  }
+}
+
+.vm-message-ok {
+  background: rgba(var(--color-green-rgb, 46, 160, 67), 0.12);
+  border: 1px solid var(--color-green, var(--interactive-accent));
+}
+
+.vm-message-warn {
+  background: rgba(var(--color-orange-rgb, 210, 153, 34), 0.12);
+  border: 1px solid var(--color-orange, var(--text-warning, var(--background-modifier-border)));
+}
+
+.vm-location-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.vm-location-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: var(--font-ui-smaller);
+}
+
+.vm-location-line:first-of-type {
+  border-top: none;
+}
+
+.vm-location-key {
+  color: var(--text-muted);
+  flex: 0 0 auto;
+}
+
+.vm-location-value {
+  color: var(--text-normal);
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.vm-state-ok {
+  color: var(--text-success, var(--interactive-accent));
+}
+
+.vm-state-warn {
+  color: var(--text-warning, var(--text-muted));
+}
+
+.vm-state-error {
+  color: var(--text-error);
+}
+
+.vm-project-head {
+  margin-bottom: 12px;
+}

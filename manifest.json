@@ -1,0 +1,9 @@
+{
+  "id": "vault-meta",
+  "name": "Vault 元系统管理",
+  "version": "0.2.1",
+  "minAppVersion": "1.5.0",
+  "description": "整库备份与恢复、项目三位置只读检查、组件登记、打包迁移与受保护卸载，一处管理本 vault 的元系统。",
+  "author": "Oscar Shao",
+  "isDesktopOnly": true
+}

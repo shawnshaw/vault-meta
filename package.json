@@ -1,0 +1,19 @@
+{
+  "name": "vault-meta",
+  "private": true,
+  "version": "0.2.1",
+  "description": "Obsidian 元系统管理器：整库备份恢复、项目三位置检查、组件登记、打包与跨 vault 迁移。",
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs",
+    "test": "node --test test/*.test.js",
+    "check": "node scripts/check-release.js",
+    "verify": "node scripts/verify-integration.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

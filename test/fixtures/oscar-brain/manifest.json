@@ -1,0 +1,9 @@
+{
+  "id": "oscar-brain",
+  "name": "Oscar Brain",
+  "version": "0.4.0",
+  "minAppVersion": "1.0.0",
+  "description": "投递 / 提问 / 审阅 面板，包住本地 knowledge_brain CLI（桌面端）。",
+  "author": "Hand",
+  "isDesktopOnly": true
+}

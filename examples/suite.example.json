@@ -1,0 +1,11 @@
+{
+  "format": "vault-meta/suite@1",
+  "id": "base-suite",
+  "name": "基础套装",
+  "version": "1.0.0",
+  "description": "示例：引用两个组件版本；必需依赖会自动补齐",
+  "components": [
+    { "id": "knowledge-canvas", "version": "1.0.0" },
+    { "id": "task-workflow-enhancer" }
+  ]
+}

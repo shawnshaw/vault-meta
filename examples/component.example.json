@@ -1,0 +1,27 @@
+{
+  "format": "vault-meta/component@1",
+  "id": "template-kit",
+  "name": "模板包",
+  "purpose": "一组可复用的 Obsidian 模板文件",
+  "version": "0.1.0",
+  "type": "files",
+  "source": {
+    "kind": "vault",
+    "path": "Templates/template-kit",
+    "origin": ""
+  },
+  "install": {
+    "location": "Templates/template-kit"
+  },
+  "files": [
+    {
+      "path": "note.md",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "size": 128
+    }
+  ],
+  "dependencies": [],
+  "compatibility": {},
+  "metadata": {},
+  "extension": {}
+}
